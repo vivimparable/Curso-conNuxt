@@ -1,0 +1,24 @@
+@mixin animacion ($number) {
+  animation-name: numbers;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+animation-delay: $number;
+
+@keyframes numbers {
+  0% {transform: scale(1,1)}
+  50%{transform: scale(2,2)}
+  100% {transform: scale(1,1);}
+}
+}
+
+
+@mixin mainAnmation(){
+animation-name: animacionMain;
+animation-duration: 7s;
+
+
+@keyframes animacionMain {
+  from {color: transparent}
+  to {color: black;}
+}
+}
